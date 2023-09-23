@@ -39,7 +39,8 @@ async def bot(message: types.Message):
         f.write(f'{user_info}\n')
     making_list.clear()
     await dp.current_state().reset_state()
-    else await message.answer("Похід на фільм відмінений. Якщо хочете записатися на інший день/час - скористайтеся командою /making")
+
+    await message.answer("Похід на фільм відмінений. Якщо хочете записатися на інший день/час - скористайтеся командою /making")
     making_list.clear()
     await dp.current_state().reset_state()
 
